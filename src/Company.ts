@@ -1,12 +1,14 @@
 import { faker } from '@faker-js/faker';
+import { Mappable } from './CustomMap';
 
-export class Company {
+export class Company implements Mappable {
 	companyName: string;
 	catchphrase: string;
 	location: {
 		lat: number;
 		lng: number;
 	};
+	color: string = 'orange';
 
 	constructor() {
 		this.companyName = faker.company.companyName();
