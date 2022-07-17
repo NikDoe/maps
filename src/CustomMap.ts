@@ -1,7 +1,7 @@
 import { User } from './User';
 import { Company } from './Company';
 
-//insructions to every other class
+//instructions to every other class
 //on how they could be an argument to 'addMarker'
 interface Mappable {
 	location: {
